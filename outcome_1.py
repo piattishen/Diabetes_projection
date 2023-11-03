@@ -23,17 +23,17 @@ def generate_smooth_function_1(column_name, smooth_functions_1):
             x = np.array(list(value.keys()))
             y = np.array(list(value.values()))
 
-            # 创建插值函数
+            # Create interpolation function
             f = interp1d(x, y, kind='cubic')
 
-            # 将插值函数存储在字典中，使用列名作为键
+            # Store interpolation functions in a dictionary using column names as keys
             smooth_functions_1[column_name] = f
 
-            # 生成平滑的数据点
+            # Plot a smooth function curve
             x_smooth = np.linspace(min(x), max(x), 100)
             y_smooth = f(x_smooth)
 
-            # 绘制平滑的函数曲线
+            # Generate smooth data points
             plt.plot(x_smooth, y_smooth)
             plt.xlabel(x_label)
             plt.ylabel(y_label)
