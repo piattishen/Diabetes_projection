@@ -149,42 +149,42 @@ if column_name in smooth_functions_1:
 
 column_name = "Pregnancies"
 if column_name in smooth_functions_0:
-    f = smooth_functions_1[column_name]
+    f = smooth_functions_0[column_name]
     x_value = Preg # any point
     y_Preg_0 = f(x_value)
     print(f'Value at x={x_value} for {column_name}: {y_Preg_0}')
 
 column_name = "Glucose"
 if column_name in smooth_functions_0:
-    f = smooth_functions_1[column_name]
+    f = smooth_functions_0[column_name]
     x_value = Glu # any point
     y_Glu_0 = f(x_value)
     print(f'Value at x={x_value} for {column_name}: {y_Glu_0}')
 
 column_name = "BloodPressure"
 if column_name in smooth_functions_0:
-    f = smooth_functions_1[column_name]
+    f = smooth_functions_0[column_name]
     x_value = Blo # any point
     y_Blo_0 = f(x_value)
     print(f'Value at x={x_value} for {column_name}: {y_Blo_0}')
 
 column_name = "SkinThickness"
 if column_name in smooth_functions_0:
-    f = smooth_functions_1[column_name]
+    f = smooth_functions_0[column_name]
     x_value = Ski # any point
     y_Ski_0 = f(x_value)
     print(f'Value at x={x_value} for {column_name}: {y_Ski_0}')
 
 column_name = "Insulin"
 if column_name in smooth_functions_0:
-    f = smooth_functions_1[column_name]
+    f = smooth_functions_0[column_name]
     x_value = 50 # any point
     y_Ins_0 = f(x_value)
     print(f'Value at x={x_value} for {column_name}: {y_Ins_0}')
 
 column_name = "BMI"
 if column_name in smooth_functions_0:
-    f = smooth_functions_1[column_name]
+    f = smooth_functions_0[column_name]
     x_value = Bmi # any point
     y_Bmi_0 = f(x_value)
     print(f'Value at x={x_value} for {column_name}: {y_Bmi_0}')
@@ -192,14 +192,14 @@ if column_name in smooth_functions_0:
 
 column_name = "DiabetesPedigreeFunction"
 if column_name in smooth_functions_0:
-    f = smooth_functions_1[column_name]
+    f = smooth_functions_0[column_name]
     x_value = Dpf # any point
     y_Dpf_0 = f(x_value)
     print(f'Value at x={x_value} for {column_name}: {y_Dpf_0}')
 
 column_name = "Age"
 if column_name in smooth_functions_0:
-    f = smooth_functions_1[column_name]
+    f = smooth_functions_0[column_name]
     x_value = Age # any point
     y_Age_0 = f(x_value)
     print(f'Value at x={x_value} for {column_name}: {y_Age_0}')
