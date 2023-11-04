@@ -53,14 +53,6 @@ df0_result = calculate_outcome_proportions_0(df0, "Pregnancies", preg_min, preg_
 # line_chart(df0_result, "weeks", "weeks number in all")
 smooth_function_for_Preg = generate_smooth_function("Pregnancies", smooth_functions_0)
 f = smooth_function_for_Preg(df0_result, "weeks", "weeks number in all")
-# print(type(smooth_functions_0))
-
-# # column_name = "Pregnancies"
-# # if column_name in smooth_functions_0:
-# #     f = smooth_functions_0[column_name]
-# #     x_value = 0 # any point
-# #     y_value = f(x_value)
-# #     print(f'Value at x={x_value} for {column_name}: {y_value}')
 outcome_proportions_0.update(df0_result)
 
 df1 = diabetes_df[diabetes_df['Glucose'] != 0]
@@ -71,12 +63,6 @@ Glu_min = df1["Glucose"].min()
 df1_result = calculate_outcome_proportions_0(df1, 'Glucose', Glu_min, Glu_max, -10)
 smooth_function_for_Glu = generate_smooth_function("Glucose", smooth_functions_0)
 f = smooth_function_for_Glu(df1_result, "glucose level", "this level number in all")
-# column_name = "Glucose"
-# if column_name in smooth_functions_0:
-#     f = smooth_functions_0[column_name]
-#     x_value = 88 # any point
-#     y_value = f(x_value)
-#     print(f'Value at x={x_value} for {column_name}: {y_value}')
 outcome_proportions_0.update(df1_result)
 
 df2 = diabetes_df[diabetes_df['BloodPressure'] != 0]
@@ -120,12 +106,6 @@ df5_result = calculate_outcome_proportions_0(df5, "BMI", BMI_min, BMI_max, -5)
 #line_chart(df5_result, "BMI", "precentage in all")
 smooth_function_for_BMI = generate_smooth_function("BMI", smooth_functions_0)
 f = smooth_function_for_BMI(df5_result, "bmi", "this level number in all")
-# column_name = "BMI"
-# if column_name in smooth_functions_0:
-#     f = smooth_functions_0[column_name]
-#     x_value = 33 # any point
-#     y_value = f(x_value)
-#     print(f'Value at x={x_value} for {column_name}: {y_value}')
 outcome_proportions_0.update(df5_result)
 
 df6 = diabetes_df[diabetes_df['DiabetesPedigreeFunction'] != 0]
@@ -152,12 +132,6 @@ df6_result = DPF_proportions(df6, "DiabetesPedigreeFunction", DPF_min, DPF_max)
 # line_chart(df6_result, "DPF", "precentage in all")
 smooth_function_for_Ins = generate_smooth_function("DiabetesPedigreeFunction", smooth_functions_0)
 f = smooth_function_for_Ins(df6_result, "x", "this level number in all")
-# column_name = "DiabetesPedigreeFunction"
-# if column_name in smooth_functions_0:
-#     f = smooth_functions_0[column_name]
-#     x_value = 1.03 # any point
-#     y_value = f(x_value)
-#     print(f'Value at x={x_value} for {column_name}: {y_value}')
 outcome_proportions_0["DiabetesPedigreeFunction"] = df6_result
 
 df7 = diabetes_df[diabetes_df['Age'] != 0]
